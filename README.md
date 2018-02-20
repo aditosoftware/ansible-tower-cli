@@ -47,4 +47,5 @@ Gitrunner config (config.toml)
     image = "aditosoftware/ansible-tower-cli"
     privileged = false
     disable_cache = true
+    volumes = ["/a/data/runner.intern/ansible/ssh:/opt/ssh", "/a/data/runner.intern/ansible/tower_cli.cfg:/root/.tower_cli.cfg"]
 ```
