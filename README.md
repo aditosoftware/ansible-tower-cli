@@ -4,7 +4,7 @@ This image based on alpine and contained the tower-cli.
 # Usage
 
 ```bash
-docker run -v $(pwd)/tower_cli.cfg:/root/.tower_cli.cfg -t adito/ansible-tower-cli sh -c "tower-cli version"
+docker run -v $(pwd)/tower_cli.cfg:/root/.tower_cli.cfg -t aditosoftware/ansible-tower-cli sh -c "tower-cli version"
 ```
 **Output**
 ```bash
@@ -44,7 +44,7 @@ Gitrunner config (config.toml)
   build_dir = "/gitdata"
   environment = ["GIT_SSL_NO_VERIFY=1"]
   [runners.docker]
-    image = "adito/ansible-tower-cli"
+    image = "aditosoftware/ansible-tower-cli"
     privileged = false
     disable_cache = true
 ```
